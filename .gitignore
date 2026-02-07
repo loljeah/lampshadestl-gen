@@ -1,4 +1,45 @@
+# Generated output (large files)
 *.stl
-.old/
-.claude/
 generated_lampshades/
+.old/
+
+# Claude
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.bak
+*.log
+
+# Lock files (keep flake.lock for Nix reproducibility)
+*.lock
+!flake.lock
+
+# Security - secrets (never commit)
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials*
